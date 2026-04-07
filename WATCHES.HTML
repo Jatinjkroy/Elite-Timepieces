@@ -1,0 +1,212 @@
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elite Watches | Watch Collection</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(to right, #000000, #434343);
+      animation: fadeIn 2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ffd700;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      animation: fadeInUp 2s ease;
+    }
+
+    .product-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.4s, box-shadow 0.4s;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .product-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .product-card h3 {
+      margin: 15px 0 5px;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+
+    .product-card p {
+      color: #aaa;
+      padding: 0 10px;
+      font-size: 0.95rem;
+    }
+
+    .price {
+      color: #ffd700;
+      font-size: 1.1rem;
+      margin: 10px 0 15px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #888;
+      font-size: 0.9rem;
+      animation: fadeIn 2s ease;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elite Timepieces</h1>
+    <p>Explore our exclusive collection of luxury watches</p>
+  </header>
+
+  <section class="product-grid">
+    <!-- Watch 1 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1730757679771-b53e798846cf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHJvbGV4JTIwZ29sZCUyMHdhdGNofGVufDB8fDB8fHww" alt="Watch 1">
+      <h3>Royal Gold</h3>
+      <p>Luxurious gold casing with a premium leather strap.</p>
+      <div class="price">$1,499</div>
+    </div>
+
+    <!-- Watch 2 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1735137019201-7b5a4fe586f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG1pbmlnaHQlMjBibHVlJTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D" alt="Watch 2">
+      <h3>Midnight Blue</h3>
+      <p>Elegant blue dial with stainless steel band.</p>
+      <div class="price">$1,250</div>
+    </div>
+
+    <!-- Watch 3 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1692992214153-edeb693a2da3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE3fHx8ZW58MHx8fHx8" alt="Watch 3">
+      <h3>Carbon Chrono</h3>
+      <p>Durable carbon fiber case with advanced chronograph.</p>
+      <div class="price">$1,850</div>
+    </div>
+
+    <!-- Watch 4 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1663802515308-fa7aea6e07b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cm9zZSUyMGNsYXNzaWMlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D" alt="Watch 4">
+      <h3>Rose Classic</h3>
+      <p>Stylish rose gold finish for timeless appeal.</p>
+      <div class="price">$1,199</div>
+    </div>
+
+    <!-- Watch 5 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1708647585551-94645e6125bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGRlZXAlMjBvY2VhbiUyMGNvbG9yJTIwd2F0Y2hlc3xlbnwwfHwwfHx8MA%3D%3D" alt="Watch 5">
+      <h3>Ocean Deep</h3>
+      <p>Water-resistant diving watch with luminous dial.</p>
+      <div class="price">$1,050</div>
+    </div>
+
+    <!-- Watch 6 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1646738004549-81888cc098ba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dXJiYW4lMjBzdGVlbCUyMHdhdGNofGVufDB8fDB8fHww" alt="Watch 6">
+      <h3>Urban Steel</h3>
+      <p>Minimalist design with brushed steel casing.</p>
+      <div class="price">$999</div>
+    </div>
+
+    <!-- Watch 7 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1694886726526-d06ab9870e9a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNoYWRvdyUyMGJsYWNrJTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D" alt="Watch 7">
+      <h3>Shadow Black</h3>
+      <p>Bold black matte finish with red accents.</p>
+      <div class="price">$1,349</div>
+    </div>
+
+    <!-- Watch 8 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1622008547395-144a6cae395f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNocm9ubyUyMG1hc3RlciUyMHdhdGNofGVufDB8fDB8fHww" alt="Watch 8">
+      <h3>Chrono Master</h3>
+      <p>Precision chronograph with sapphire glass.</p>
+      <div class="price">$1,799</div>
+    </div>
+
+    <!-- Watch 9 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1590915312848-1e11ca4b13d6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRlc2VydCUyMGJyb256ZSUyMHdhdGNofGVufDB8fDB8fHww" alt="Watch 9">
+      <h3>Desert Bronze</h3>
+      <p>Unique bronze finish with tan leather straps.</p>
+      <div class="price">$1,099</div>
+    </div>
+
+    <!-- Watch 10 -->
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1727391484253-1f51d0503f6e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNpbHZlciUyMGVkZ2UlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D" alt="Watch 10">
+      <h3>Silver Edge</h3>
+      <p>Modern design with brushed silver elegance.</p>
+      <div class="price">$1,399</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Elite Watches. All rights reserved.
+  </footer>
+
+</body>
+</html>
